@@ -1,7 +1,7 @@
 # Overview
 During testing of the application’s avatar upload feature, a high‑severity file upload vulnerability was discovered. The system attempted to prevent malicious uploads using an extension blacklist, but this control was bypassed by leveraging .htaccess directives to treat a custom extension (.l33t) as executable PHP. This allowed the upload and execution of a web shell, leading to remote code execution and unauthorized access to sensitive files.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Logged in with valid credentials and intercepted the avatar upload request using Burp Suite.
 
